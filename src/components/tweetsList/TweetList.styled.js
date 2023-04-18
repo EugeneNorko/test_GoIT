@@ -22,7 +22,14 @@ const TweetItem = styled.li`
     #4b2a99 78.99%
   );
   border-radius: 20px;
+  box-shadow: -3px 7px 21px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s ease-in-out;
   color: #ebd8ff;
+
+  &:hover,
+  &:focus {
+    box-shadow: -4px 9px 26px rgba(0, 0, 0, 0.8);
+  }
 `;
 
 const TweetImage = styled.img`
