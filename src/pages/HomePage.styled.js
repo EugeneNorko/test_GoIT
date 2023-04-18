@@ -20,8 +20,7 @@ const LinkMain = styled(Link)`
   border-radius: 5px;
   font-weight: 700;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: rgb(71, 28, 169);
     color: #fff;
   }

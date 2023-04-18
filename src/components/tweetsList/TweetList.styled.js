@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 const TweetList = styled.ul`
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   flex-wrap: wrap;
-  margin-bottom: -20px;
+  margin: -25px;
 `;
 
 const TweetItem = styled.li`
@@ -16,7 +14,7 @@ const TweetItem = styled.li`
   width: 380px;
   min-height: 460px;
   padding: 278px 10px 36px 10px;
-  margin-bottom: 20px;
+  margin: 25px;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,

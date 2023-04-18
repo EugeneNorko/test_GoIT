@@ -10,4 +10,7 @@ const BackLink = styled(LinkMain)`
   margin: 0 0 20px 0;
 `;
 
-export { TitleTweet, BackLink };
+const ShowMoreButton = styled(LinkMain)`
+  margin-top: 40px;
+`;
+export { TitleTweet, BackLink, ShowMoreButton };
