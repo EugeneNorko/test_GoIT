@@ -5,11 +5,19 @@ import Footer from "../footer/Footer";
 
 const Layout = () => {
   return (
-    <>
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Header />
-      <Outlet />
+      <main style={{ flex: "1 1 auto" }}>
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

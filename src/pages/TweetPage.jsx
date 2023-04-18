@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { getTweets, putTweets } from "../utils/getTweetsApi";
+import { getTweets, putTweets } from "../utils/tweetsApi";
 import TweetsList from "../components/tweetsList/TweetsList";
+import { TitleTweet, BackLink } from "./TweetPage.styled";
+import { ContainerMain } from "./HomePage.styled";
 
 const Tweetpage = () => {
   const [tweets, setTweets] = useState([]);
@@ -14,7 +15,7 @@ const Tweetpage = () => {
   const onFollowHandler = async (id, isFollowing, followers) => {
     const changedFollowers = isFollowing
       ? Number(followers) - 1
-      : Number(followers + 1);
+      : Number(followers) + 1;
     await putTweets(id, !isFollowing, changedFollowers);
     getTweets()
       .then((res) => setTweets(res.data))
@@ -22,10 +23,12 @@ const Tweetpage = () => {
   };
 
   return (
-    <section>
-      <h2>Tweets</h2>
-      <Link to="/">Back home</Link>
-      <TweetsList tweets={tweets} onFollow={onFollowHandler} />
+    <section style={{ padding: "30px 0 30px 0" }}>
+      <ContainerMain>
+        <TitleTweet>Tweets</TitleTweet>
+        <BackLink to="/">Back home</BackLink>
+        <TweetsList tweets={tweets} onFollow={onFollowHandler} />
+      </ContainerMain>
     </section>
   );
 };

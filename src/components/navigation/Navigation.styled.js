@@ -6,9 +6,21 @@ const StyledNav = styled.nav`
   align-items: center;
 `;
 
-const StyledLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   display: block;
   font-size: 24px;
+  padding: 5px 0 5px 0;
+  &.active {
+    color: #fff;
+  }
+
+  & + & {
+    margin-left: 20px;
+  }
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
 `;
 
-export { StyledLink, StyledNav };
+export { StyledNavLink, StyledNav };

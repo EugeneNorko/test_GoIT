@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { ContainerMain, TitleMain, LinkMain } from "./HomePage.styled";
 const HomePage = () => {
   return (
-    <section>
-      <h1>Pleased to meet you on my page. Be happy!</h1>
-      <Link to="tweets">Go to tweets</Link>
+    <section style={{ paddingTop: "100px" }}>
+      <ContainerMain>
+        <TitleMain>Pleased to meet you on my page. Be happy!</TitleMain>
+        <LinkMain to="tweets">Go to tweets</LinkMain>
+      </ContainerMain>
     </section>
   );
 };

@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+*{
+  box-sizing: border-box;
+}
   body {
     margin: 0;
     color: #471CA9;
@@ -12,15 +15,24 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: #471CA9;
     cursor: pointer;
-    &:hover, &:focus {
-        color: #373737;
-    }
   }
 
   ul, li {
     margin: 0;
     padding: 0;
     list-style:none;
+  }
+
+  h1, h2, h3, p {
+    margin: 0;
+  }
+  button {
+    cursor:pointer;
+  }
+  img {
+    display:block;
+    height:auto;
+    width:100%;
   }
 `;
 

@@ -1,11 +1,15 @@
 import React from "react";
-import { StyledLink, StyledNav } from "./Navigation.styled";
+import { StyledNavLink, StyledNav } from "./Navigation.styled";
 
 const Navigation = () => {
   return (
     <StyledNav>
-      <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/tweets">Tweets</StyledLink>
+      <StyledNavLink to="/" rel="noopener noreferrer">
+        Home
+      </StyledNavLink>
+      <StyledNavLink to="/tweets" rel="noopener noreferrer">
+        Tweets
+      </StyledNavLink>
     </StyledNav>
   );
 };

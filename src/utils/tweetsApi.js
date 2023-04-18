@@ -10,7 +10,6 @@ const putTweets = (id, isFollowing, followers) => {
       isFollowing: isFollowing,
       followers,
     })
-    .then((tweet) => console.log(tweet))
     .catch((error) => console.log("ERROR" + error));
 };
 
