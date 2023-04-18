@@ -1,5 +1,6 @@
 Hi to all! My name is Eugene 👋 and this is my test project. It was written using the React library.
 The project contains two pages, a main page and a page for tweets.
+You can see the project <a href="https://eugenenorko.github.io/test_goit/">HERE</a> 👌
 
 Main page contains:
 <ul>
@@ -30,4 +31,5 @@ I have used those technologies:
 <li>Axios</li>
 <li>HTML</li>
 <li>SCSS</li>
+<li>MockApi like imitation of backend part</li>
 </ul>
