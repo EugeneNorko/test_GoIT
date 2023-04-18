@@ -20,6 +20,7 @@ Tweets page contains:
 </ul>
 
 Tweet cards are interactive. You can click the follow button and the cards will change. See for yourself!
+A tweet page also has pages. The selected page is saved into the localStorage and after refreshing the page you can see the same cards.
 
 I have used those technologies:
 
