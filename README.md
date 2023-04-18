@@ -30,6 +30,7 @@ I have used those technologies:
 <li>Javascript</li>
 <li>Axios</li>
 <li>HTML</li>
+<li>Styled Component</li>
 <li>SCSS</li>
 <li>MockApi like imitation of backend part</li>
 </ul>
