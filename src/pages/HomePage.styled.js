@@ -6,8 +6,12 @@ const ContainerMain = styled(StyledContainer)``;
 
 const TitleMain = styled.h1`
   text-align: center;
-  font-size: 35px;
   margin-bottom: 30px;
+  font-size: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+  }
 `;
 const LinkMain = styled(Link)`
   display: flex;

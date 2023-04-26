@@ -8,7 +8,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     color: #471CA9;
     font-family: 'Montserrat', 'sans-serif';
-    font-size:18px;
+    font-size:16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   a {

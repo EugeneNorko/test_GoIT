@@ -4,6 +4,9 @@ import { LinkMain } from "./HomePage.styled";
 const TitleTweet = styled.h2`
   text-align: center;
   font-size: 24px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const BackLink = styled(LinkMain)`

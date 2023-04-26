@@ -21,7 +21,7 @@ const TweetsList = ({ tweets, onFollow }) => {
   return (
     <TweetList>
       {tweets.map(({ id, followers, avatar, tweets, isFollowing }) => (
-        <TweetItem key={id}>
+        <TweetItem key={id} imgUrl={TweetImageSrc}>
           <TweetImage src={TweetImageSrc} alt="Simple image" />
           <TweetLogo src={TweetLogoSrc} alt="Goit logo" />
           <AvatarWrapp>

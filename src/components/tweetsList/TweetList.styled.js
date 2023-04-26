@@ -3,7 +3,12 @@ import styled from "styled-components";
 const TweetList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin: -25px;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin: -25px;
+  }
 `;
 
 const TweetItem = styled.li`
@@ -11,10 +16,10 @@ const TweetItem = styled.li`
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 380px;
+  width: 290px;
   min-height: 460px;
   padding: 278px 10px 36px 10px;
-  margin: 25px;
+  margin: 0 0 25px 0;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -30,6 +35,14 @@ const TweetItem = styled.li`
   &:focus {
     box-shadow: -4px 9px 26px rgba(0, 0, 0, 0.8);
   }
+  @media screen and (min-width: 768px) {
+    margin: 25px;
+    width: 343px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 25px;
+    width: 383px;
+  }
 `;
 
 const TweetImage = styled.img`
@@ -37,7 +50,13 @@ const TweetImage = styled.img`
   top: 28px;
   left: 50%;
   transform: translate(-50%);
-  width: 308px;
+  width: 270px;
+  @media screen and (min-width: 768px) {
+    width: 310px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 308px;
+  }
 `;
 
 const TweetLogo = styled.img`
@@ -98,6 +117,7 @@ const TweetFollowButton = styled.button`
   min-height: 50px;
   background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border: none;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
